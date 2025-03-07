@@ -29,9 +29,6 @@ Ball.prototype.draw = function () {
   ctx.fill();
 }
 
-let testBall = new Ball(50, 100, 4, 4, 'blue', 10);
-
-testBall.draw();
 
 Ball.prototype.update = function() {
   if ((this.x + this.size) >= width) {
@@ -69,7 +66,8 @@ Ball.prototype.collisionDetect = function() {
 }
 
 let balls = [];
-while (ball.length < 25) {
+
+while (balls.length < 25) {
   let size = random(10,20);
   let ball = new Ball(
   random(0 + size, width - size),
