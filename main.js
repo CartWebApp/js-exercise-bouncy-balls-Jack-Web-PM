@@ -67,14 +67,14 @@ Ball.prototype.collisionDetect = function() {
 
 let balls = [];
 
-while (balls.length < 200) {
-  let size = random(10,20);
+while (balls.length < 250) {
+  let size = random(1,50);
   let ball = new Ball(
   random(0 + size, width + size),
   random(0 + size, height + size),
   random(-7, 7),
   random(-7, 7),
-  'rgb (' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) +')',
+  'rgb (' + random(0, 255) + ',' + random(0, 255) + ',' + random(255, 255) +')', 
   size );
     balls.push(ball);
 }
